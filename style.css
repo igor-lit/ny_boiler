@@ -1,32 +1,247 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 1rem;
 }
 .image-container {
     overflow: hidden;
+    padding: 0px 1rem;
+    box-sizing: border-box;
 }
-.image-container img{
+.image-container img {
+    width: 100%;
     display: block;
-    max-width: 100%;
+}
+section {
+    padding: 60px 0px;
 }
 
+h2, h4 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+h3 {
+    font-weight: 600;
+}
+h4 {
+    margin: 10px 0;
+}
+
+p, li {
+    color: rgb(119, 119, 119);
+    line-height: 1.9;
+    font-size: 14px;
+}
+.services, .faq, .quote {
+    background-color: rgb(247, 247, 247);
+}
+/* HEADER SECTION */
 header {
-    display: flex;
-    align-items: center;
-    paddingL .5rem 3.75rem;
     background-color: black;
 }
-
-nav li {
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header li {
     display: inline;
     padding-right: 2rem;
+    text-transform: uppercase;
 }
-
-nav li:last-child {
+header li:last-child {
     padding-right: 0;
 }
+header li a {
+    color: white;
+    text-decoration: none;
+ }
+
+/* BANNER SECTION*/
+
+
+.banner {
+    height: 300px;
+    background-image: url("https://content.codecademy.com/projects/broadway/bg.jpg");
+    background-position: center;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.banner .container {
+    max-width: 650px;
+}
+.banner h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
 .button {
-    padding: 1.25rem 3.75rem;
+    display: inline-block;
+    padding: 1rem 3rem;
     border-radius: 4px;
-    background-color: orange;
+    background-color: rgb(221, 51, 51 );
+    text-decoration: none;
+    color: white;
+}
+.button:hover {
+    background-color: white;
+    color:black;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 580px) {
+    .columns {
+        flex-direction: column;
+    }
+}
+.features .col {
+    flex: 1 1 200px;
+    padding: 40px 20px;
+}
+
+
+
+/* GRID ITEMS */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-item {
+    display: block;
+    flex-basis: 25%;
+    background-color: white;
+    border: 1px solid rgb(247, 247, 247);
+    box-sizing: border-box;
+    padding: 40px 8px;
+    text-align: center;
+}
+.grid-item span {
+    font-weight: 600;
+    letter-spacing: .05rem;
+}
+@media only screen and (max-width: 960px) {
+    .grid-item {
+        flex-basis: 33.33%;
+    }
+}
+@media only screen and (max-width: 667px) {
+    .grid-item {
+        flex-basis: 50%;
+        padding: 20px;
+    }
+}
+
+/* ABOUT */
+.about .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.heading {
+    flex-basis: 100%;
+    display: block;
+}
+.about .image-container {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+.about img {
+    width: 250px;
+    margin: 0 auto;
+}
+.about .content {
+    flex-basis: 50%;
+}
+@media only screen and (max-width: 667px) {
+    .about .content, .about .image-container {
+        flex-basis: 100%;
+    }
+}
+
+/* FAQ SECTION */
+.faq .container {
+    max-width: 750px;
+}
+
+
+
+/* CTA */
+.cta {
+    padding: 2rem 1rem;
+    background-color: rgb(221, 51, 51);
+    text-align: center;
+    text-transform: uppercase;
+}
+.cta h5 {
+    font-size: 1.8rem;
+    color: white;
+}
+.cta .button {
+    background-color: black; 
+    letter-spacing: .1rem;
+}
+.cta .button:hover {
+    background-color: white;
+}
+
+/* QUOTE */
+.quote .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.heading {
+    flex-basis: 100%;
+    display: block;
+}
+.quote .col {
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 667px) {
+    .quote .col {
+        flex-basis: 100%;
+    }
+}
+
+.map {
+    padding: 0;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: rgb(23, 27, 30);
+    color: white;
+}
+footer .container {
+    max-width: 667px;
+    padding: 60px 1rem;
+
+}
+footer .logo {
+    margin-bottom: 2rem;
+}
+footer p {
+    border: 1 px gray solid;
 }
