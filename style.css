@@ -146,9 +146,7 @@ header li a {
     text-align: center;
     text-transform: uppercase;
 }
-.logo {
-    width: 50px;
-}
+
 .banner .container {
     max-width: 650px;
 }
