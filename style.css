@@ -25,13 +25,7 @@ section {
     display: grid;
     gap: 2rem;
 }
-input[type = submit], {
-    background-color: orange;
-    text-decoration: none;
-    color: white;
-    padding: 20px 20px;
-    cursor: pointer;
- }
+
 @media only screen and (min-width: 50rem) {
     .even-col {
         grid-template-columns: 1fr 1fr;
@@ -93,6 +87,13 @@ p, li {
 .secondary-button:hover {
     color:red;
 }
+input[type = submit] {
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    cursor: pointer;
+ }
 .flex-group {
     display: flex;
     gap: 1rem;
