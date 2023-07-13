@@ -1,3 +1,4 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 input {
     all: unset;
   }
@@ -76,7 +77,7 @@ p, li {
     color: white;
 }
 .button:hover {
-    background-color: rgb(181, 51, 51);;
+    background-color: red;
 }
 
 .secondary-button {
@@ -91,11 +92,14 @@ p, li {
 }
 input[type = submit] {
     text-align: center;
-    background-color: red;
+    background-color: rgb(221, 51, 51);
     text-decoration: none;
     color: white;
     padding: 20px 20px !important;
     cursor: pointer;
+ }
+ input[type = submit]:hover {
+    background-color: red;
  }
 .flex-group {
     display: flex;
@@ -112,7 +116,53 @@ input[type = submit] {
 #features, #services, #faq {
     background-color: rgb(247, 247, 247);
 }
-/* HEADER SECTION */
+/* NAV 
+nav {
+    height: 60px;
+    background: var(--clr-secondary);
+
+}
+nav a:hover {
+    color: #c30111;
+}
+nav img {
+    width: 150px;
+    position: absolute;
+    left: 12px;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 15px;
+}
+nav ul li a {
+    position: relative;
+    color: var(--clr-primary);
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: .05rem;
+}
+
+label #btn,
+label #cancel {
+    color: var(--clr-primary);
+    font-size: 24px;
+    float: right;
+    line-height: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+*/
+
+/*HEADER SECTION*/
 header {
     background-color: black;
 }
@@ -136,6 +186,7 @@ header li a {
  header li a:hover {
     color:red;
  }
+
 /* BANNER SECTION*/
 .banner {
     height: 250px;
