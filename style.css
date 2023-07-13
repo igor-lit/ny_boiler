@@ -90,7 +90,7 @@ p, li {
     color:red;
 }
 input[type = submit] {
-    line-height: 2rem;
+    text-align: center;
     background-color: red;
     text-decoration: none;
     color: white;
@@ -145,7 +145,9 @@ header li a {
     background-position: center;
     text-align: center;
     text-transform: uppercase;
-
+}
+.logo {
+    width: 50px;
 }
 .banner .container {
     max-width: 650px;
